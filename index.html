@@ -1,44 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/reset.css">
+  </head>
+  <body>
+    <header>
+      <h1>SPLITTER</h1>
+    </header>
+    <div class="tip-calculator-container flex">
+      <div class="tip-calculator">
+        <div>
+          <label for="billInput">Bill</label>
+          <input class="input bill-input" id="billInput" type="number" placeholder="0" dir="rtl">
+        </div>
+        <div>
+          <span>Select Tip %</span>
+          <div class="tip-choices-container flex">
+            <button class="tip-choices">5%</button>
+            <button class="tip-choices">10%</button>
+            <button class="tip-choices">15%</button>
+            <button class="tip-choices">25%</button>
+            <button class="tip-choices">50%</button>
+            <input class="tip-choices custom-tip-choice" type="number" placeholder="Custom" dir="rtl">
+          </div>
+        </div>
+        <div>
+          <label for="numOfPeople">Number of People</label>
+          <input class="input num-people-input" id="numOfPeople" type="number" placeholder="0" dir="rtl">
+        </div>
+      </div>
+      <div class="results-container">
+        <div class="tip-amount-container flex">
+          <div class="results-info">
+            <span>Tip Amount</span>
+            <span>/ person</span>
+          </div>
+          <div class="results">
+            <span>$0.00</span>
+          </div>
+        </div>
+        <div class="tip-total-container flex">
+          <div class="results-info">
+            <span>Total</span>
+            <span>/ person</span>
+          </div>
+          <div class="results">
+            <span>$0.00</span>
+          </div>
+        </div>
+        <button class="reset-btn" id="resetBtn">RESET</button>
+      </div>
+    </div>
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/Bnjackson">Benjamin Jackson</a>.
+    </footer>
+    <script src="/index.js"></script>
+  </body>
 </html>
