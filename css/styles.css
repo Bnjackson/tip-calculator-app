@@ -30,6 +30,7 @@ input {
     padding-right: 10px;
 }
 
+
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
@@ -65,6 +66,7 @@ label, .tip-percentage-container span{
 
 .input {
     font-size: 1.1rem;
+    font-weight: 700;
     color: hsl(183, 100%, 15%);
 }
 
@@ -76,6 +78,8 @@ label, .tip-percentage-container span{
 
 .custom-tip-choice {
     color: hsl(183, 100%, 15%);
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
 ::placeholder {
@@ -127,6 +131,7 @@ input {
 
 button:hover {
     background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
 }
 
 .custom-tip-choice {
@@ -195,7 +200,7 @@ label {
     flex-wrap: wrap;
 }
 
-.tip-choices {
+.tip-choices, .custom-tip-choice {
     height: 40px;
     width : 30%;
     border: none;
@@ -243,4 +248,16 @@ Footer
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+/*
+Active classes
+*/
+.active-tip-btn {
+    background-color: #26c2ad;
+    color: hsl(183, 100%, 15%);
+}
+
+.active-tip-input {
+    outline: 2px solid hsl(172, 67%, 45%);
 }
