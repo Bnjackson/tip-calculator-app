@@ -146,13 +146,13 @@ button:hover {
 Images 
 */
 .bill-input {
-    background-image: url('/images/icon-dollar.svg');
+    background-image: url('/tip-calculator-app/images/icon-dollar.svg');
     background-repeat: no-repeat;
     background-position: 12px;
 }
 
 .num-people-input {
-    background-image: url('/images/icon-person.svg');
+    background-image: url('/tip-calculator-app/images/icon-person.svg');
     background-repeat: no-repeat;
     background-position: 12px;
 }
