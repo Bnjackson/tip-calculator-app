@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <title>Frontend Mentor | Tip calculator app</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/styles.css">
@@ -12,7 +12,7 @@
     <header>
       <h1>SPLITTER</h1>
     </header>
-    <div class="tip-calculator-container flex">
+    <div class="tip-calculator-container">
       <div class="tip-calculator">
         <div class="bill-input-container">
           <label for="billInput">Bill</label>
@@ -26,10 +26,10 @@
             <button class="tip-choices">15%</button>
             <button class="tip-choices">25%</button>
             <button class="tip-choices">50%</button>
-            <input class="tip-choices custom-tip-choice" type="number" placeholder="Custom" dir="rtl">
+            <input id="customTipChoice" class="custom-tip-choice" type="number" placeholder="Custom" dir="rtl">
           </div>
         </div>
-        <div>
+        <div class="num-people-input-container">
           <label for="numOfPeople">Number of People</label>
           <input class="input num-people-input" id="numOfPeople" type="number" placeholder="0" dir="rtl">
         </div>
@@ -41,7 +41,7 @@
             <span class="person-span">/ person</span>
           </div>
           <div class="results">
-            <span>$0.00</span>
+            <span id="tipAmount">$0.00</span>
           </div>
         </div>
         <div class="tip-total-container flex">
@@ -50,7 +50,7 @@
             <span class="person-span">/ person</span>
           </div>
           <div class="results">
-            <span>$0.00</span>
+            <span id="total">$0.00</span>
           </div>
         </div>
         <button class="reset-btn" id="resetBtn">RESET</button>
