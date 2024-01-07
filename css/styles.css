@@ -161,6 +161,7 @@ Images
 Tip calculator-section
 */
 .tip-calculator-container {
+    display: flex;
     margin: 0 auto;
     width: 800px;
     padding: 30px;
@@ -260,4 +261,42 @@ Active classes
 
 .active-tip-input {
     outline: 2px solid hsl(172, 67%, 45%);
+}
+
+@media only screen and (max-width: 810px) {
+    header {
+        margin: 8% auto 8% auto;
+    }
+    .tip-calculator-container {
+        display: block;
+        width: 380px;
+        margin: 0 auto;
+    }
+    .tip-calculator, .results-container {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .results-container {
+        height: 40%;
+        padding: 25px;
+    }
+    .reset-btn  {
+        margin: 6% auto;
+        height: 40px;
+    }
+    .tip-percentage-container {
+        height: 150px;
+    }
+    .tip-choices, .custom-tip-choice {
+        height: 40px;
+        width : 48%;
+        margin-bottom: 4%;
+    }
+    .num-people-input-container {
+        margin: 20% 0 8% 0;
+    }
+    .attribution {
+        display: none;
+    }
 }
